@@ -1,3 +1,14 @@
+/* CUSTOM PROPS */ 
+:root {
+    --blue: #5267DF;
+    --red: #FA5959;
+    --text-color: rgb(36, 42, 69);
+    --text-color-75: rgba(36, 42, 69, 0.75);
+    --text-color-50: rgba(36, 42, 69, 0.5);
+    
+}
+
+
 /* FONT-FACE */
 @font-face {
     font-family: 'Poppins';
@@ -79,6 +90,7 @@ body {
     font-weight: 500;
     font-family: "Rubik", "Arial", sans-serif;
     background-color: #fff;
+    color: var(--text-color-50);
     color: var(--text-color);
 }
 
