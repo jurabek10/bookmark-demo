@@ -331,7 +331,7 @@ main {
     opacity: 0.6;
 }
 
-.tabs__panels {
+.tabspanels {
     padding-top: 75px;
     padding-bottom: 165px;
     background-image: url("../img/Rectangle.svg");
@@ -339,11 +339,11 @@ main {
     background-position: calc(50% - 580px) 156px;
 }
 
-.tabs__panel {
+.tabspanels__item {
     display: none;
 }
 
-.tabs__panel--active {
+.tabspanels__item--active {
     display: block;
 }
 
