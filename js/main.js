@@ -2,6 +2,10 @@ const elsTabLink = document.querySelectorAll(".js-tab-link");
 const elsTabsItem = document.querySelectorAll(".tabs__item");
 const elsTabsPanel = document.querySelectorAll(".tabspanels__item");
 
+const elsAccordionItemToggler = document.querySelectorAll(".accordion__item--toggler");
+const elsAccordionItem = document.querySelectorAll(".accordion__item");
+
+
 
 function deactivateTabsItem () {
     elsTabsItem.forEach(function (elTabsItem) {
@@ -12,6 +16,12 @@ function deactivateTabsItem () {
 function deactivateTabsPanel () {
     elsTabsPanel.forEach(function (elTabsPanel) {
         elTabsPanel.classList.remove("tabspanels__item--active");
+    });
+}
+
+function closeAccordionItems () {
+    elsAccordionItem.forEach(function (elAccordionItem) {
+        elAccordionItem.classList.remove("accordion__item--open")
     });
 }
 
@@ -37,4 +47,12 @@ elsTabLink.forEach(function (elTabLink) {
         elTargetPanel.classList.add("tabspanels__item--active");
         
     });
+});
+
+elsAccordionItemToggler.forEach(function (elAccordionItemTogggler) {
+    elAccordionItemTogggler.addEventListener("click", function () {
+        closeAccordionItems();
+
+        elAccordionItemTogggler.closest('.accordion__item').classList.add("accordion__item--open");
+    })
 })
