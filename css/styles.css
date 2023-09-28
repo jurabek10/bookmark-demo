@@ -449,6 +449,10 @@ main {
     margin: 0;
 }
 
+.accordion__item--text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 
 /* SOCIALS */
 .socials {
